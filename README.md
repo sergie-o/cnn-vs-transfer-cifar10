@@ -144,7 +144,8 @@ The project followed a **progressive benchmarking approach**, starting with simp
 - `scikit-learn`  
 - `matplotlib`, `seaborn`, `plotly`
 
-  # 1) Install dependencies
+### 1️⃣ Install dependencies  
+```bash
 pip install -r requirements.txt
 
 # 2) Run analysis & plots (VS Code)
