@@ -60,35 +60,36 @@ The final **EfficientNetB0** model achieved **92.7% accuracy**, outperforming al
 4. Evaluate trade-offs: training cost vs generalization vs accuracy  
 
 ---
-
 ## 🛠 Steps Taken  
 
-1. Baseline CNN (Model 1)
-   - Conv → Pool → Dense  
-   - Accuracy: **67.6%**  
+The project followed a **progressive benchmarking approach**, starting with simple CNNs and gradually moving towards advanced transfer learning models.  
 
-2. CNN + EarlyStopping 
-   - Added `EarlyStopping(patience=3)`  
-   - Accuracy: **69.4%**  
+1. **Baseline CNN (Model 1)**  
+   - Architecture: Conv → Pool → Dense  
+   - Result: **67.6% accuracy**  
 
-3. CNN + Augmentation + EarlyStopping**  
-   - Applied random rotations, shifts, flips  
-   - Accuracy: **74.1%**  
+2. **CNN + EarlyStopping**  
+   - Added `EarlyStopping(patience=3)` to prevent overfitting  
+   - Result: **69.4% accuracy**  
 
-4. Stronger CNN (Model 2) 
-   - Added **BatchNorm**, **L2 regularization**, **Dropout**  
-   - Accuracy: **84.2%**  
+3. **CNN + Data Augmentation + EarlyStopping**  
+   - Applied random rotations, shifts, flips for better generalization  
+   - Result: **74.1% accuracy**  
 
-5. Transfer Learning – MobileNetV2 
-   - Pretrained on ImageNet, frozen base  
-   - Accuracy: **85.9%**  
+4. **Stronger CNN (Model 2)**  
+   - Added **Batch Normalization**, **L2 regularization**, and **Dropout**  
+   - Result: **84.2% accuracy**  
 
-6. Transfer Learning – EfficientNetB0
+5. **Transfer Learning – MobileNetV2**  
+   - Pretrained on ImageNet, frozen base, custom classification head  
+   - Result: **85.9% accuracy**  
+
+6. **Transfer Learning – EfficientNetB0**  
    - Pretrained on ImageNet, fine-tuned last ~30 layers  
-   - Accuracy: **92.7%**  
+   - Result: **92.7% accuracy (best model)**  
 
----
-
+---  
+📈 This stepwise progression shows how **each improvement contributed** — from architectural tweaks in CNNs to the power of pretrained models.  
 ## 📊 Key Findings  
 
 | Model Variant                       | Key Improvements                     | Test Accuracy |
