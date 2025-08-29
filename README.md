@@ -96,7 +96,7 @@ The final **EfficientNetB0** model achieved **92.7% accuracy**, outperforming al
 ## 📈 Accuracy Progression  
 
 <p align="center">
-  <img src="reports/figures/accuracy_progression_chart.png" alt="Accuracy Progression Chart" width="700"/>
+  <img src="https://github.com/sergie-o/cnn-vs-transfer-cifar10/blob/main/%F0%9F%93%8A%20Accuracy%20Progression%3A%20CNN%20vs%20Transfer%20Learning.png" alt="Accuracy Progression Chart" width="700"/>
 </p>  
 
 ---
