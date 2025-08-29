@@ -1,7 +1,7 @@
 # 📌 Benchmarking CNNs vs Transfer Learning — CIFAR-10 Case Study  
 
 <p align="center">
-  <img src="" alt="Accuracy Progression Chart" width="700"/>
+  <img src="https://github.com/sergie-o/cnn-vs-transfer-cifar10/blob/main/image.png" alt="Banner" width="700"/>
 </p>  
 
 
