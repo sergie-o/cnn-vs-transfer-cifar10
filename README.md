@@ -11,9 +11,16 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen.svg)  
 
 
+> 🧠 **What happens when you compare custom-built CNNs against modern transfer learning models?**  
+> This project explores exactly that by benchmarking **CNN architectures vs MobileNetV2 & EfficientNetB0** on the **CIFAR-10 dataset**.  
 
-> 🧠 **How far can we push CNNs, and when does transfer learning outperform them?**  
-> This project benchmarks **custom CNNs** against **pretrained models (MobileNetV2, EfficientNetB0)** on the CIFAR-10 dataset, progressively improving models with **early stopping, augmentation, regularization, and fine-tuning**.  
+Unlike many CIFAR-10 projects that focus only on one approach, this study walks through the **evolution of improvements**:  
+- Starting from a **basic CNN built from scratch**  
+- Adding **early stopping and data augmentation** to reduce overfitting  
+- Scaling up to a **regularized CNN with BatchNorm & Dropout**  
+- Finally, benchmarking against **transfer learning with pretrained ImageNet models**  
+
+The result is a **clear, data-driven progression** that shows how each enhancement contributes — from ~67% accuracy with the first CNN to **92.7% with EfficientNetB0**.   
 
 ---
 
