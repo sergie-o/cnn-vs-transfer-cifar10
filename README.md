@@ -63,27 +63,27 @@ The final **EfficientNetB0** model achieved **92.7% accuracy**, outperforming al
 
 ## 🛠 Steps Taken  
 
-1. **Baseline CNN (Model 1)**  
+1. Baseline CNN (Model 1)
    - Conv → Pool → Dense  
    - Accuracy: **67.6%**  
 
-2. **CNN + EarlyStopping**  
+2. CNN + EarlyStopping 
    - Added `EarlyStopping(patience=3)`  
    - Accuracy: **69.4%**  
 
-3. **CNN + Augmentation + EarlyStopping**  
+3. CNN + Augmentation + EarlyStopping**  
    - Applied random rotations, shifts, flips  
    - Accuracy: **74.1%**  
 
-4. **Stronger CNN (Model 2)**  
+4. Stronger CNN (Model 2) 
    - Added **BatchNorm**, **L2 regularization**, **Dropout**  
    - Accuracy: **84.2%**  
 
-5. **Transfer Learning – MobileNetV2**  
+5. Transfer Learning – MobileNetV2 
    - Pretrained on ImageNet, frozen base  
    - Accuracy: **85.9%**  
 
-6. **Transfer Learning – EfficientNetB0**  
+6. Transfer Learning – EfficientNetB0
    - Pretrained on ImageNet, fine-tuned last ~30 layers  
    - Accuracy: **92.7%**  
 
