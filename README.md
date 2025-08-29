@@ -1,6 +1,9 @@
 # 📌 Benchmarking CNNs vs Transfer Learning — CIFAR-10 Case Study  
 
-![Vision Benchmark Banner](reports/feature/summary_infographic.png)  
+<p align="center">
+  <img src="" alt="Accuracy Progression Chart" width="700"/>
+</p>  
+
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)  
 ![TensorFlow](https://img.shields.io/badge/Framework-TensorFlow-orange.svg)  
