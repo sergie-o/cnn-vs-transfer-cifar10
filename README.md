@@ -1,15 +1,15 @@
 # 📌 Benchmarking CNNs vs Transfer Learning — CIFAR-10 Case Study  
 
-<p align="center">
-  <img src="https://github.com/sergie-o/cnn-vs-transfer-cifar10/blob/main/image.png" alt="Banner" width="700"/>
-</p>  
-
-
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)  
 ![TensorFlow](https://img.shields.io/badge/Framework-TensorFlow-orange.svg)  
 ![Keras](https://img.shields.io/badge/API-Keras-red.svg)  
 ![Dataset](https://img.shields.io/badge/Data-CIFAR--10-blueviolet.svg)  
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen.svg)  
+
+<p align="center">
+  <img src="https://github.com/sergie-o/cnn-vs-transfer-cifar10/blob/main/image.png" alt="Banner" width="700"/>
+</p>  
+
 
 > 🧠 **How far can we push CNNs, and when does transfer learning outperform them?**  
 > This project benchmarks **custom CNNs** against **pretrained models (MobileNetV2, EfficientNetB0)** on the CIFAR-10 dataset, progressively improving models with **early stopping, augmentation, regularization, and fine-tuning**.  
