@@ -141,10 +141,55 @@ The final **EfficientNetB0** model achieved **92.7% accuracy**, outperforming al
 - `keras`  
 - `numpy`, `pandas`  
 - `scikit-learn`  
-- `matplotlib`, `seaborn`, `plotly`  
+- `matplotlib`, `seaborn`, `plotly`
 
-**Steps**:  
-```bash
-git clone https://github.com/<your-username>/cifar10-vision-benchmark.git
-cd cifar10-vision-benchmark
+  # 1) Install dependencies
 pip install -r requirements.txt
+
+# 2) Run analysis & plots (VS Code)
+jupyter notebook notebooks/computervsion.ipynb
+
+# 3) Train CNNs (Colab)
+#    - Model 1: Baseline CNN
+#    - Model 1 + EarlyStopping
+#    - Model 1 + Data Augmentation + EarlyStopping
+#    - Model 2: Stronger CNN (BN, L2, Dropout)
+open notebooks/cnn_models.ipynb
+
+# 4) Train Transfer Learning models (Colab)
+#    - MobileNetV2 (96×96, frozen base → fine-tune)
+#    - EfficientNetB0 (224×224, frozen base → fine-tune last ~30 layers)
+open notebooks/transfer_models.ipynb
+
+# 5) Results & reports
+# All evaluation, confusion matrices, and summaries 
+# are included in computervsion.ipynb
+
+---
+
+📁 Repo Structure
+
+```
+cifar10-vision-benchmark/
+├─ README.md
+├─ LICENSE
+├─ .gitignore
+├─ requirements.txt                
+├─ notebooks/
+│  ├─ computervsion.ipynb       # VS Code: data exploration + reports + evaluation
+│  ├─ cnn_models.ipynb          # Colab: CNN experiments (baseline → aug → stronger CNN)
+│  └─ transfer_models.ipynb     # Colab: Transfer learning (MobileNetV2, EfficientNetB0)
+├─ models/                      # Saved models (.keras, .h5) – ignored by git
+│  └─ .gitkeep
+├─ reports/
+│  ├─ figures/
+│  │  ├─ cm_cnn_baseline.png
+│  │  ├─ cm_cnn_augmented.png
+│  │  ├─ cm_cnn_stronger.png
+│  │  ├─ cm_mobilenetv2.png
+│  │  └─ cm_efficientnetb0.png
+│  └─ feature/
+│     ├─ linkedin_feature.png
+│     └─ summary_infographic.png
+└─ logs/
+   └─ training_histories/       # JSON histories per run (if saved)
