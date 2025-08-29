@@ -1,4 +1,4 @@
-# 📌 Benchmarking CNNs vs Transfer Learning — CIFAR-10 Case Study  
+# 🚀 From Scratch to State-of-the-Art: CNNs vs Transfer Learning on CIFAR-10  
 
 <p align="center">
   <img src="https://github.com/sergie-o/cnn-vs-transfer-cifar10/blob/main/image.png" alt="Banner" width="900"/>
