@@ -144,10 +144,10 @@ The project followed a **progressive benchmarking approach**, starting with simp
 - `scikit-learn`  
 - `matplotlib`, `seaborn`, `plotly`
 
+
 ### 1️⃣ Install dependencies  
 ```bash
 pip install -r requirements.txt
-
 # 2) Run analysis & plots (VS Code)
 jupyter notebook notebooks/computervsion.ipynb
 
@@ -168,7 +168,7 @@ open notebooks/transfer_models.ipynb
 # are included in computervsion.ipynb
 
 ---
-
+```
 📁 Repo Structure
 
 ```
